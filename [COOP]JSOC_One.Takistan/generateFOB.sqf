@@ -53,5 +53,5 @@ markerTargetPos = createMarker ["Target Pos", getPos O_target ];
 "Target Pos" setMarkerPos getPos O_target;
 
 // Start the correct HC Script so we do not need to have all units in each possible FOB.
-correctHCScript = _randomEnemyBaseVal;
-publicVariable "correctHCScript";
+// correctHCScript = _randomEnemyBaseVal;
+// publicVariable "correctHCScript";
