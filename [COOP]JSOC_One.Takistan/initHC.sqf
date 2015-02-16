@@ -1,7 +1,7 @@
 if !(hasInterface or isServer) then
 {
-	correctHCScript = floor(random 4);
-	publicVariable "correctHCScript";
+	// Init correctHCScript for HC.
+	if (isNil "correctHCScript") then { correctHCScript = floor(random 4); publicVariable "correctHCScript"; };
 	HeadlessVariable = true;
 	publicVariable "HeadlessVariable";
 	
@@ -9,8 +9,11 @@ if !(hasInterface or isServer) then
 	execVM "script.sqf";
 	if (!isNil "correctHCScript") then
 	{
+		systemChat "correctHCScript is NOT nil";
+		_string = "script"+ str correctHCScript + ".sqf";
+		systemChat _string;
 		// Start the HC script with special units depending on the random value.
-		execVM "script"+ str correctHCScript + ".sqf";
+		execVM _string;
 	}
 	else
 	{
