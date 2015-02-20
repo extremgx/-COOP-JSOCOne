@@ -2,8 +2,7 @@
 if (isNil "aUAV") then { aUAV = []; publicVariable "aUAV"; };
 // Init Bool for Alarm when convoy should start.
 if (isNil "alarm") then { alarm = false; publicVariable "alarm"; };
-// Init for Random IEDs
-
+if (isNil "B_SniperTeam_Pos") then { B_SniperTeam_Pos = 5; publicVariable "B_SniperTeam_Pos"; };
 
 if (isNil "O_Task_TargetInSafeHouse") then { O_Task_TargetInSafeHouse = false; publicVariable "O_Task_TargetInSafeHouse"; };
 
