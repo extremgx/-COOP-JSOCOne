@@ -3,7 +3,7 @@
  *
  * Source: C:\Users\Linus Meng\Documents\Arma 3 - Other Profiles\extremgx\missions\[COOP]JSOC_One_HC_CA_0.Takistan\mission.sqm
  * File Version: 12 | Arma 3
- * Date: 19.02.2015 15:04
+ * Date: 20.02.2015 15:42
  */
 
 _west = createCenter west;				// BLUFOR (NATO)
@@ -108,3 +108,48 @@ _group_east_2 = createGroup _east;
 	[_group_east_2, 1] setWaypointStatements ["true", ""];
 	[_group_east_2, 1] setWaypointType "GUARD";
 // End of Group _group_east_2
+
+// Begin of Group _group_east_3
+_group_east_3 = createGroup _east;
+	// Begin of Unit _group_east_3_unit_1
+	if (true) then
+	{
+		_group_east_3_unit_1 = _group_east_3 createUnit ["O_soldier_TL_F", [10786.674, 10910.135, 0], [], 0, "CAN_COLLIDE"];
+		_group_east_3_unit_1 setUnitAbility 0.5;
+		_group_east_3_unit_1 setRank "SERGEANT";
+		_group_east_3 selectLeader _group_east_3_unit_1;
+	};
+	// End of Unit _group_east_3_unit_1
+	// Begin of Unit _group_east_3_unit_2
+	if (true) then
+	{
+		_group_east_3_unit_2 = _group_east_3 createUnit ["O_soldier_AR_F", [10791.674, 10905.135, 0], [], 0, "CAN_COLLIDE"];
+		_group_east_3_unit_2 setUnitAbility 0.44999999;
+		_group_east_3_unit_2 setRank "CORPORAL";
+	};
+	// End of Unit _group_east_3_unit_2
+	// Begin of Unit _group_east_3_unit_3
+	if (true) then
+	{
+		_group_east_3_unit_3 = _group_east_3 createUnit ["O_soldier_GL_F", [10781.674, 10905.135, 0], [], 0, "CAN_COLLIDE"];
+		_group_east_3_unit_3 setUnitAbility 0.40000001;
+	};
+	// End of Unit _group_east_3_unit_3
+	// Begin of Unit _group_east_3_unit_4
+	if (true) then
+	{
+		_group_east_3_unit_4 = _group_east_3 createUnit ["O_soldier_LAT_F", [10796.674, 10900.135, 0], [], 0, "CAN_COLLIDE"];
+		_group_east_3_unit_4 setUnitAbility 0.40000001;
+	};
+	// End of Unit _group_east_3_unit_4
+	// Waypoints for _group_east_3
+	// Waypoint #1
+	_wp = _group_east_3 addWaypoint[[9947.5117, 11402.53, 0], 0, 1];
+	[_group_east_3, 1] setWaypointBehaviour "UNCHANGED";
+	[_group_east_3, 1] setWaypointCombatMode "NO CHANGE";
+	[_group_east_3, 1] setWaypointCompletionRadius 0;
+	[_group_east_3, 1] setWaypointFormation "NO CHANGE";
+	[_group_east_3, 1] setWaypointSpeed "UNCHANGED";
+	[_group_east_3, 1] setWaypointStatements ["true", ""];
+	[_group_east_3, 1] setWaypointType "GUARD";
+// End of Group _group_east_3

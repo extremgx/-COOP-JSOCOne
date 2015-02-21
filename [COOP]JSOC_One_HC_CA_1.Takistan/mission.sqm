@@ -34,7 +34,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			side="EAST";
@@ -149,6 +149,66 @@ class Mission
 				class Item0
 				{
 					position[]={5186.1489,145.32625,6138.4912};
+					type="GUARD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={4897.5913,232.85768,6678.0342};
+					azimut=156.44189;
+					id=8;
+					side="EAST";
+					vehicle="O_soldier_TL_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item1
+				{
+					position[]={4891.0098,234.38454,6680.6167};
+					azimut=156.44189;
+					id=9;
+					side="EAST";
+					vehicle="O_soldier_AR_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item2
+				{
+					position[]={4900.1772,232.82716,6684.6162};
+					azimut=156.44189;
+					id=10;
+					side="EAST";
+					vehicle="O_soldier_GL_F";
+					skill=0.40000001;
+				};
+				class Item3
+				{
+					position[]={4884.4287,235.77687,6683.2046};
+					azimut=156.44189;
+					id=11;
+					side="EAST";
+					vehicle="O_soldier_LAT_F";
+					skill=0.40000001;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5417.3867,219.38306,5914.3447};
 					type="GUARD";
 					class Effects
 					{
